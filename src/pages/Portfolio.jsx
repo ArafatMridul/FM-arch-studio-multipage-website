@@ -1,13 +1,10 @@
 import { motion } from "motion/react";
 import PortfolioItem from "../components/Portfolio/PortfolioItem";
 import { pictures } from "../components/Portfolio/Pictures";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 
 const Portfolio = () => {
     return (
         <>
-            <Navbar />
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -50,7 +47,6 @@ const Portfolio = () => {
                     </div>
                 </div>
             </motion.div>
-            <Footer />
         </>
     );
 };

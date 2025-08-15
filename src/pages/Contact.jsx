@@ -1,6 +1,4 @@
 import { motion } from "motion/react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import Hero from "../components/Contact/Hero";
 import Details from "../components/Contact/Details";
 import Map from "../components/Contact/Map";
@@ -14,12 +12,10 @@ const Contact = () => {
             exit={{ opacity: 0, y: 100 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
         >
-            <Navbar />
             <Hero />
             <Details />
             <Map />
             <Connect />
-            <Footer />
         </motion.div>
     );
 };
