@@ -3,6 +3,7 @@ import Hero from "../components/Contact/Hero";
 import Details from "../components/Contact/Details";
 import Map from "../components/Contact/Map";
 import Connect from "../components/Contact/Connect";
+import Reveal from "../components/Reveal";
 
 const Contact = () => {
     return (

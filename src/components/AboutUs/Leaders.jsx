@@ -4,6 +4,7 @@ import l1 from "/assets/about/desktop/avatar-jake.jpg";
 import l2 from "/assets/about/desktop/avatar-thompson.jpg";
 import l3 from "/assets/about/desktop/avatar-jackson.jpg";
 import l4 from "/assets/about/desktop/avatar-maria.jpg";
+import Reveal from "../Reveal";
 
 const leaders = [
     { img: l1, name: "Jake Richards", pos: "Chief Architect" },
@@ -25,7 +26,9 @@ const Leaders = () => {
             </div>
             <div className="mt-12 lg:mt-0 grid sm:grid-cols-2 gap-20 sm:gap-2 sm:gap-y-24 lg:gap-8 lg:gap-y-16">
                 {leaders.map(({ img, name, pos }, index) => (
-                    <Leader key={index} img={img} name={name} pos={pos} />
+                    <Reveal>
+                        <Leader key={index} img={img} name={name} pos={pos} />
+                    </Reveal>
                 ))}
             </div>
         </section>
